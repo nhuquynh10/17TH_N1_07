@@ -11,7 +11,13 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack) {
+                int tong = tinhtong2so(1, 2);
+            }
 
+        }
+        int tinhtong2so(int a, int b) {
+            return a + b;
         }
     }
 }
