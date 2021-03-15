@@ -11,7 +11,12 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack) {
+                formatString(1);
+            }
+        }
+        public string formatString(int a) {
+            return "test " + a;
         }
     }
 }
